@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  background-color: #a8e6a1;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #064b0d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #dfffe0;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  color: #045e0a;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.courses, .about {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background-color: #a8e6a1;
+  padding: 15px;
+  color: #045e0a;
+  font-size: 0.9em;
+}
