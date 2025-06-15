@@ -42,6 +42,6 @@ nav ul ul a {
   font-weight: normal;
   white-space: nowrap;
 }
-nav li:hover > ul {
-  display: block;
-}
+
+nav ul ul { display: none; }
+nav ul li ul.show { display: block; }

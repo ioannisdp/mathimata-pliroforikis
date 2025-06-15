@@ -37,8 +37,8 @@
   <a href="#">Θέματα Πανελληνίων ▾</a>
   <ul>
     <li><a href="exams-aepp.html">ΑΕΠΠ - Γενικού Λυκείου</a></li>
-    <li><a href="exams-epal-programming.html">Προγραμματισμός ΕΠΑΛ</a></li>
-    <li><a href="exams-epal-networks.html">Δίκτυα Υπολογιστών ΕΠΑΛ</a></li>
+    
+    
   </ul>
 </li>
 
@@ -58,5 +58,21 @@
   <footer style="text-align:center; margin-top:40px; color:#333;">
     © 2025 Ιωάννης Δ. Παναγιωτίδης – Μαθήματα Πληροφορικής
   </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdownLinks = document.querySelectorAll("nav li > a");
+    dropdownLinks.forEach(link => {
+      const submenu = link.nextElementSibling;
+      if (submenu && submenu.tagName === "UL") {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+        });
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
