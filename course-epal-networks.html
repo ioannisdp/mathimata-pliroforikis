@@ -59,5 +59,22 @@
   });
 </script>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggles = document.querySelectorAll("nav > ul > li > a");
+
+  dropdownToggles.forEach(toggle => {
+    const submenu = toggle.nextElementSibling;
+    if (submenu && submenu.tagName === "UL") {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        submenu.classList.toggle("show");
+      });
+    }
+  });
+});
+</script>
+
 </body>
 </html>

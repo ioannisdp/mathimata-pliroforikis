@@ -45,3 +45,16 @@ nav ul ul a {
 
 nav ul ul { display: none; }
 nav ul li ul.show { display: block; }
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #429e78;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+nav ul ul.show {
+  display: block;
+}
