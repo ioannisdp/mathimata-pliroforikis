@@ -43,38 +43,5 @@
   <footer style="text-align:center; margin-top:40px; color:#333;">
     © 2025 Ιωάννης Δ. Παναγιωτίδης – Μαθήματα Πληροφορικής
   </footer>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const dropdownLinks = document.querySelectorAll("nav li > a");
-    dropdownLinks.forEach(link => {
-      const submenu = link.nextElementSibling;
-      if (submenu && submenu.tagName === "UL") {
-        link.addEventListener("click", function (e) {
-          e.preventDefault();
-          submenu.style.display = submenu.style.display === "block" ? "none" : "block";
-        });
-      }
-    });
-  });
-</script>
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownToggles = document.querySelectorAll("nav > ul > li > a");
-
-  dropdownToggles.forEach(toggle => {
-    const submenu = toggle.nextElementSibling;
-    if (submenu && submenu.tagName === "UL") {
-      toggle.addEventListener("click", function (e) {
-        e.preventDefault();
-        submenu.classList.toggle("show");
-      });
-    }
-  });
-});
-</script>
-
 </body>
 </html>
